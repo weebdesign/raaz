@@ -442,6 +442,9 @@
             margin-left: 20rem;
                 
               }
+         .active #cart {
+            left:20px;
+        }
         
 
     }
@@ -474,7 +477,7 @@
             z-index: 999;
         }
         .active #cart {
-            left:0;
+            left:20px;
         }
         #payment button {
          
@@ -496,6 +499,9 @@
            
           
          
+        }
+         .active #cart {
+            left:20px;
         }
         #payment .header {
             display: flex;
