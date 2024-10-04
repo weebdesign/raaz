@@ -29,6 +29,7 @@
     
     .navber.active{
         right: 0;
+        width: 30%;
 
     }
     .head{
@@ -258,6 +259,11 @@
             margin-bottom: 0%;
            
         }
+        .navber.active{
+            right: 0;
+            width: 30%;
+    
+        }
         #hero p {
             padding-bottom: 11px;
             font-size: 16px;
@@ -343,6 +349,11 @@
             text-align: left;
             margin-top: 35px;
             margin-bottom: 0%;
+        }
+        .navber.active{
+            right: 0;
+            width: 30%;
+    
         }
         #feature {
             width: 90%;
@@ -442,9 +453,11 @@
             margin-left: 20rem;
                 
               }
-         .active #cart {
-            left:20px;
-        }
+              .navber.active{
+                right: 0;
+                width: 30%;
+        
+            }
         
 
     }
@@ -453,6 +466,11 @@
       padding: 2rem 2rem;
       margin-left: 0rem;
           
+        }
+        .navber.active{
+            right: 0;
+            width: 30%;
+    
         }
         #payment .header {
             display: flex;
@@ -477,7 +495,7 @@
             z-index: 999;
         }
         .active #cart {
-            left:20px;
+            left:0;
         }
         #payment button {
          
@@ -489,6 +507,11 @@
     @media only screen and (max-width:380px) {
         #payment{
             padding-left: 2rem;
+        }
+        .navber.active{
+            right: 0;
+            width: 30%;
+    
         } #payment .product {
             display: grid;
             align-items: center;
@@ -499,9 +522,6 @@
            
           
          
-        }
-         .active #cart {
-            left:20px;
         }
         #payment .header {
             display: flex;
