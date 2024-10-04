@@ -431,3 +431,76 @@
     }
 
     /* payment didnamic */
+    @media only screen and (max-width:680px) {
+        #payment button {
+           
+            bottom: 2px;
+            right: 43%;
+        }
+        #payment {
+            padding: 2rem 2rem;
+            margin-left: 20rem;
+                
+              }
+        
+
+    }
+    @media only screen and (max-width:480px) {
+        #payment {
+      padding: 2rem 2rem;
+      margin-left: 0rem;
+          
+        }
+        #payment .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            height: 80px;
+            padding: 15px 18px;
+            width: 90%;
+         
+        }
+        #cart {
+            position:fixed;
+            background-color: teal;
+            top: 0%;
+            right: -600%;
+            width: 400px;
+            height: 90vh;
+            border-radius: 12px;
+            border-bottom-right-radius: 0%;
+            transition: .4s;
+            z-index: 999;
+        }
+        .active #cart {
+            left:0;
+        }
+        #payment button {
+         
+            bottom: 2px;
+            right: 41%;
+        }
+    }
+
+    @media only screen and (max-width:380px) {
+        #payment{
+            padding-left: 2rem;
+        } #payment .product {
+            display: grid;
+            align-items: center;
+           grid-template-columns: repeat(3,1fr);
+            cursor: pointer;
+            height: 80px;
+            padding: 15px 5px;
+           
+          
+         
+        }
+        #payment .header {
+            display: flex;
+            width: 100%;
+        }
+
+    }
+    
