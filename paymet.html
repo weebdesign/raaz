@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Commerce Website</title>
+
+    <!-- font asome -->
+    <script src="https://kit.fontawesome.com/8cd948d9fe.js" crossorigin="anonymous">
+    </script>
+    <!-- Link to extralnal css -->
+     <link rel="stylesheet" href="style.css">
+     <!-- <link rel="stylesheet" href="responsive.css"> -->
+</head>
+<body>
+    <section id="payment">
+    <div class="container">
+<div class="header">
+    <h2>Paymet</h2>
+    <div class="basket">
+        <i class="fas fa-shopping-bag bag"></i>
+    <span class="quantity">0</span>
+
+    </div>
+
+</div>
+
+    </div>
+    <div class="product">
+        
+        
+    </div>
+    <div id="cart">
+        <h3>Your Cart</h3>
+        <ul class="productList"> </ul>
+            <div class="checkOut">
+                <div class="total">
+               <small>  </small> </div>
+               <div class="close">Close</div>
+
+                </div>
+
+            </div>
+            
+       
+    
+</section>
+
+   
+    
+
+    <!-- <script src="cumtom.js"></script> -->
+
+    <script>
+        let arrPayment= [
+    {
+        id: 1,
+        name:"T-Shirt",
+        price:1280,
+        image:"pro-images (1).jpg",
+        rating:5,
+       
+    },
+    {
+        id: 2,
+        name:"T-Shirt",
+        price:1280,
+        image:'pro-images (2).jpg',
+        rating:6,
+       
+    },
+    {
+        id: 3,
+        name:"T-Shirt",
+        price:1280,
+        image:'pro-images (3).jpg',
+        rating:5,
+       
+    },
+    {
+        id: 4,
+        name:"T-Shirt",
+        price: 1280,
+        image:'pro-images (4).jpg',
+        rating:6,
+    }, {
+        id: 5,
+        name:"T-Shirt",
+        price: 1280,
+        image:'pro-images (5).jpg',
+        rating:6,
+    },
+    {
+        id: 6,
+        name:"T-Shirt",
+        price: 1280,
+        image:'pro-images (6).jpg',
+        rating:5,
+    },
+    {
+        id: 7,
+        name:"T-Shirt",
+        price: 1280,
+        image:'pro-images(15).jpg',
+        rating:6,
+    }, {
+        id: 4,
+        name:"T-Shirt",
+        price: 1280,
+        image:'pro-images(11).jpg',
+        rating:6,
+    },
+    {
+        id: 8,
+        name:"Bliss",
+        price:380,
+        image:'csmeties (2).jpg',
+        rating:6,
+    },
+    {
+        id: 9,
+        name:"Bliss",
+        price:860,
+        image:'csmeties (3).jpg',
+        rating:6,
+    },
+    {
+        id: 10,
+        name:"Bliss",
+        price:550,
+        image:'csmeties (6).jpg',
+        rating:6,
+    },
+    {
+        id: 11,
+        name:"Bliss",
+        price:680,
+        image:'csmeties (1).jpg',
+        rating:6,
+    },
+    {
+        id: 12,
+        name:"Bliss",
+        price:490,
+        image:'csmeties (2).jpg',
+        rating:4,
+    },
+    {
+        id: 11,
+        name:"Bliss",
+        price:680,
+        image:'csmeties (3).jpg',
+        rating:6,
+    },
+    {
+        id: 12,
+        name:"Bliss",
+        price:680,
+        image:'csmeties (4).jpg',
+        rating:5,
+    },
+    {
+        id: 13,
+        name:"Bliss",
+        price:680,
+        image:'csmeties (6).jpg',
+        rating:6,
+    },
+    {
+        id: 14,
+        name:"Bliss",
+        price:680,
+        image:'csmeties (8).jpg',
+        rating:6,
+    },
+    {
+        id: 15,
+        name:"Bliss",
+        price:750,
+        image:'csmeties (7).jpg',
+        rating:6,
+    },
+    {
+        id: 16,
+        name:"Bliss",
+        price: 960,
+        image:'csmeties (5).jpg',
+        rating:6,
+    },
+    {
+        id: 9,
+        name:"Bliss",
+        price: 860,
+        image:'csmeties (3).jpg',
+        rating:6,
+    },
+     {
+        id:19,
+        name:"Beutiful Watch",
+        price:260,
+        image:'watch-270(6).jpg',
+        rating:6,
+    },
+     {
+        id:20,
+        name:"Beutiful Watch",
+        price:560,
+        image:'watch-580(5).jpg',
+        rating:6,
+    },
+     {
+        id:21,
+        name:"Beutiful Watch",
+        price:480,
+        image:'watch-440(4).jpg',
+        rating:6,
+    },
+     {
+        id:22,
+        name:"Beutiful Watch",
+        price:260,
+        image:'watch-361(3).jpg',
+        rating:5,
+    },
+     {
+        id:23,
+        name:"Beutiful Watch",
+        price:350,
+        image:'watch-360(2).jpg',
+        rating:6,
+    },
+     {
+        id:24,
+        name:"Beutiful Watch",
+        price:350,
+        image:'watch-350(1).jpg',
+        rating:4,
+    },
+    {
+        id:25,
+        name:"Exclusive Headphones",
+        price:280,
+        image:'head-phone-280(1).jpg',
+        rating:5,
+    },
+    {
+        id:26,
+        name:"Exclusive Headphones",
+        price:300,
+        image:'head-phone-300(2).jpg',
+        rating:6,
+    },
+    {
+        id:27,
+        name:"Exclusive Headphones",
+        price:360,
+        image:'head-phone-360(3).jpg',
+        rating:4,
+    },
+    {
+        id:26,
+        name:"Exclusive Headphones",
+        price:360,
+        image:'head-phone-320(4).jpg',
+        rating:6,
+    },
+    {
+        id:26,
+        name:"Exclusive Headphones",
+        price:560,
+        image:'head-phone-560(5).jpg',
+        rating:5,
+    },
+    
+]
+// ================================================
+        let arrproduct =[
+    {
+        id: 1,
+        name:"Cartoon Astronaut T-Shirt",
+        price:" 1280/=",
+        image:"pro-images (1).jpg",
+        rating:4,
+       
+    },
+    {
+        id: 2,
+        name:"Cartoon Astronaut T-Shirt",
+        price:" 1280/=",
+        image:'pro-images (2).jpg',
+        rating:5,
+       
+    },
+    {
+        id: 3,
+        name:"Cartoon Astronaut T-Shirt",
+        price:"1280/=",
+        image:'pro-images (3).jpg',
+        rating:5,
+       
+    },
+    {
+        id: 4,
+        name:"Cartoon Astronaut T-Shirt",
+        price:" 1280/=",
+        image:'pro-images (4).jpg',
+        rating:6,
+    },
+    {
+        id: 5,
+        name:"Cartoon Astronaut T-Shirt",
+        price:" 1280/=",
+        image:'pro-images (5).jpg',
+        rating:6,
+    },
+    {
+        id: 5,
+        name:"Cartoon Astronaut T-Shirt",
+        price:" 1280/=",
+        image:'pro-images (6).jpg',
+        rating:6,
+    },
+    {
+        id: 6,
+        name:"Cartoon Astronaut T-Shirt",
+        price:" 1280/=",
+        image:'pro-images(15).jpg',
+        rating:6,
+    },
+    {
+        id: 7,
+        name:"Cartoon Astronaut T-Shirt",
+        price:" 1280/=",
+        image:'pro-images(11).jpg',
+        rating:6,
+    },
+    {
+        id: 8,
+        name:"Bliss Cosmeties items",
+        price:" 380/=",
+        image:'csmeties (2).jpg',
+        rating:6,
+    },
+    {
+        id: 9,
+        name:"Bliss Cosmeties items",
+        price:" 860/=",
+        image:'csmeties (3).jpg',
+        rating:6,
+    },
+    {
+        id: 10,
+        name:"Bliss Cosmeties items",
+        price:" 550/=",
+        image:'csmeties (6).jpg',
+        rating:6,
+    },
+    {
+        id: 11,
+        name:"Bliss Cosmeties items",
+        price:" 680/=",
+        image:'csmeties (1).jpg',
+        rating:6,
+    },
+    {
+        id: 12,
+        name:"Bliss Cosmeties items",
+        price:" 490/=",
+        image:'csmeties (2).jpg',
+        rating:4,
+    },
+    {
+        id: 11,
+        name:"Bliss Cosmeties items",
+        price:" 680/=",
+        image:'csmeties (3).jpg',
+        rating:6,
+    },
+    {
+        id: 12,
+        name:"Bliss Cosmeties items",
+        price:" 680/=",
+        image:'csmeties (4).jpg',
+        rating:5,
+    },
+    {
+        id: 13,
+        name:"Bliss Cosmeties items",
+        price:" 680/=",
+        image:'csmeties (6).jpg',
+        rating:6,
+    },
+    {
+        id: 14,
+        name:"Bliss Cosmeties items",
+        price:" 680/=",
+        image:'csmeties (8).jpg',
+        rating:6,
+    },
+    {
+        id: 15,
+        name:"Bliss Cosmeties items",
+        price:" 750/=",
+        image:'csmeties (7).jpg',
+        rating:6,
+    },
+    {
+        id: 16,
+        name:"Bliss Cosmeties items",
+        price:" 960/=",
+        image:'csmeties (5).jpg',
+        rating:6,
+    },
+    {
+        id: 17,
+        name:"Bliss Cosmeties items",
+        price:" 860/=",
+        image:'csmeties (1).jpg',
+        rating:6,
+    },
+     {
+        id:18,
+        name:"Bliss Cosmeties items",
+        price:" 860/=",
+        image:'csmeties (1).jpg',
+        rating:6,
+    },
+      {
+        id:19,
+        name:"Beutiful Watch",
+        price:" 260/=",
+        image:'watch-270(6).jpg',
+        rating:6,
+    },
+     {
+        id:20,
+        name:"Beutiful Watch",
+        price:" 560/=",
+        image:'watch-580(5).jpg',
+        rating:6,
+    },
+     {
+        id:21,
+        name:"Beutiful Watch",
+        price:" 480/=",
+        image:'watch-440(4).jpg',
+        rating:6,
+    },
+     {
+        id:22,
+        name:"Beutiful Watch",
+        price:" 260/=",
+        image:'watch-361(3).jpg',
+        rating:5,
+    },
+     {
+        id:23,
+        name:"Beutiful Watch",
+        price:" 350/=",
+        image:'watch-360(2).jpg',
+        rating:6,
+    },
+     {
+        id:24,
+        name:"Beutiful Watch",
+        price:" 350/=",
+        image:'watch-350(1).jpg',
+        rating:6,
+    },
+     {
+        id:25,
+        name:"Exclusive Headphones",
+        price:" 280/=",
+        image:'head-phone-280(1).jpg',
+        rating:5,
+    },
+    {
+        id:26,
+        name:"Exclusive Headphones",
+        price:" 300/=",
+        image:'head-phone-300(2).jpg',
+        rating:6,
+    },
+    {
+        id:27,
+        name:"Exclusive Headphones",
+        price:" 360/=",
+        image:'head-phone-360(3).jpg',
+        rating:4,
+    },
+    {
+        id:26,
+        name:"Exclusive Headphones",
+        price:" 320/=",
+        image:'head-phone-320(4).jpg',
+        rating:6,
+    },
+    {
+        id:26,
+        name:"Exclusive Headphones",
+        price:" 560/=",
+        image:'head-phone-560(5).jpg',
+        rating:5,
+    },
+
+
+]
+
+const body =document.querySelector('body');
+const product =document.querySelector('.product');
+const basket=document.querySelector('.basket');
+const closeCart=document.querySelector(".close");
+const productList=document.querySelector(".productList");
+const quantity=document.querySelector(".quantity");
+const total=document.querySelector(".total");
+
+let checkOutList = [];
+
+basket.onclick =()=>{
+    body.classList.add("active")
+}
+
+closeCart.onclick =()=>{
+    body.classList.remove("active")
+}
+
+function onInIn(){
+    arrproduct.forEach((iteam, key)=>{
+       
+        let div =document.createElement("div")
+        div.classList.add("iteam");
+
+        let star='';
+        for(i=1; i<iteam.rating; i++){
+            star+=` <i class="fas fa-star"></i>`
+        }
+      
+
+        div.innerHTML=`<img src="images/${iteam.image}"/>
+        <div> ${star}</div>
+
+         <h5>${iteam.name}</5>
+             <h4><i class="fa-solid fa-bangladeshi-taka-sign">${iteam.price}</4>
+                <button onclick="addToCart (${key})"  class="normal" >Buy Now</button>
+        
+        `
+        
+
+        product.appendChild(div)
+
+    })
+}
+onInIn()
+
+// dimamic cart =========================================
+
+
+function addToCart(id){
+    
+    if (checkOutList[id]==null) {
+
+        checkOutList[id]=arrPayment[id];
+        checkOutList[id].quantity=1;
+        
+    }
+    else{
+        // checkOutList[id].quantity+=1;
+    }
+   
+     reloadCard();
+}
+// addToCart();
+
+
+function reloadCard (){
+    productList.innerHTML=" ";
+    let count=0;
+    let totalPrice=0;
+
+    checkOutList.forEach((iteam, key)=>{
+        totalPrice+=parseInt(iteam.price*iteam.quantity)
+        let li =document.createElement('li');
+        console.log(iteam)
+        count+=iteam.quantity
+       
+
+
+        li.innerHTML=`<img src="images/${iteam.image}"/>
+        <div>${iteam.name}</div>
+             <div>${iteam.price}</div>
+                <div class="btn">
+                 <div class="minus" onclick="updateQuatity(${key},${iteam.quantity-1})"><i class="fa-solid fa-square-minus"></i></div>
+                  <div class="count">${iteam.quantity}</div>
+                 <div class="plus" onclick="updateQuatity(${key},${iteam.quantity+1})"><i class="fa-solid fa-square-plus"></i></div>
+
+   
+</div>
+            `;
+            productList.appendChild(li)
+           
+       
+         
+
+    });
+   
+    
+    quantity.innerHTML=count;
+    total.innerHTML=`
+    
+               <small> (Sub-Total ${count} iteams)&nbsp<i class="fa-solid fa-bangladeshi-taka-sign"></i>&nbsp </small>`+ totalPrice+'/=';
+
+               console.log(totalPrice)
+           
+
+}
+
+function updateQuatity(key,quantity){
+    if(quantity==0) { 
+  delete checkOutList[key];
+
+   }
+
+
+else {
+    checkOutList[key].quantity=quantity;
+}
+ reloadCard();
+}
+
+    </script>
+    
+        
+    </body>
+    </html>
