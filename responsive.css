@@ -488,7 +488,7 @@
             top: 0%;
             right: -600%;
             width: 400px;
-            height: 90vh;
+            height: 100vh;
             border-radius: 12px;
             border-bottom-right-radius: 0%;
             transition: .4s;
@@ -496,6 +496,7 @@
         }
         .active #cart {
             left:0;
+            
         }
         #payment button {
          
