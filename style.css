@@ -521,6 +521,7 @@ h6{
   footer h4{
     font-size: 14px;
     padding-bottom: 2rem;
+      color:orange;
 
   }
   footer p{
@@ -554,12 +555,14 @@ h6{
   }
   footer .follow i{
    
-    color: orange;
+  
+        color: #088188;
   }
   footer .follow  i:hover,
   footer .follow  a:hover{
-    color: #088188;
-      transform-translate:Scal(1.4)
+        color: orange;
+  
+      transform-translate: Scal(1.4);
    
 
   }
