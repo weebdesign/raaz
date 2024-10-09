@@ -554,11 +554,11 @@ h6{
   }
   footer .follow i{
    
-    color: #656;
+    color: orange;
   }
   footer .follow  i:hover,
   footer .follow  a:hover{
-    color: orange;
+    color: #088188;
    
 
   }
