@@ -536,6 +536,7 @@ h6{
   }
   footer .follow{
     margin-top: 2rem;
+      
   }
   footer .follow i{
     margin-left: 6px;
@@ -557,7 +558,7 @@ h6{
   }
   footer .follow  i:hover,
   footer .follow  a:hover{
-    color: #088178;
+    color: orange;
    
 
   }
